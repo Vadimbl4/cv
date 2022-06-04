@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Roboto&display=swap');
+
+body {
+  background-color: rgb(191, 188, 188);
+  margin: 0;
+  padding: 0;
+  font-family: 'Caveat', cursive;
+  font-weight: 500;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px rgb(43, 39, 39);
+  pointer-events: all;
+}
+
+.ava {
+  position: relative;
+}
+
+.avatar:hover {
+  animation: avVan 1.5s infinite;
+}
+@keyframes avVan {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.avAppear {
+  animation: avAppear 1.5s infinite;
+}
+@keyframes avAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.q {
+  position: absolute;
+  top: 80px;
+  left: 85px;
+  pointer-events: none;
+}
+
+.btns {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 20px;
+  top: 20px;
+  pointer-events: all;
+}
+
+.animBtn {
+  margin-bottom: 10px;
+  width: 120px;
+  height: 50px;
+  background: linear-gradient(90deg, rgb(94, 91, 91), rgb(204, 230, 8));
+  font-family: inherit;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgb(43, 39, 39);
+}
+
+.darkThemeBtn {
+  margin-bottom: 10px;
+  width: 120px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-family: inherit;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgb(43, 39, 39);
+}
+
+header {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerText {
+  margin-left: 20px;
+}
+
+.education,
+.hobby,
+.social,
+.contact {
+  background-color: rgb(146, 229, 146);
+  border-radius: 30px;
+  margin: 2% 20%;
+  padding: 1em 0;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.leftArrow {
+  transform: rotate(-45deg);
+  margin: 2px 0;
+  margin-right: 5px;
+  animation: leftArrow 2s infinite;
+}
+@keyframes leftArrow {
+  0% {
+    transform: translateX(0) rotate(-45deg);
+  }
+  50% {
+    transform: translateX(-5px) rotate(-45deg);
+  }
+  100% {
+    transform: translateX(0) rotate(-45deg);
+  }
+}
+
+.rightArrow {
+  transform: rotate(135deg);
+  margin: 2px 0;
+  margin-left: 10px;
+  animation: rightArrow 2s infinite;
+}
+@keyframes rightArrow {
+  0% {
+    transform: translateX(0) rotate(135deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(135deg);
+  }
+  100% {
+    transform: translateX(0) rotate(135deg);
+  }
+}
+
+.education h2,
+.hobby h2,
+.social h2,
+.contact h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.social ul,
+.hobby ul,
+.education ul {
+  padding: 0 1em;
+}
+
+.education ul li,
+.hobby ul li,
+.social ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.educationList {
+  display: none;
+}
+
+#ed {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.social ul li {
+  border: 0;
+  text-align: center;
+  pointer-events: all;
+}
+
+.hobby {
+  background-color: rgb(227, 243, 107);
+}
+
+.hobby ul li {
+  text-align: center;
+}
+
+.social {
+  background-color: rgb(75, 196, 248);
+}
+
+.social a {
+  text-decoration: none;
+  color: black;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+.social a:visited {
+  color: gray;
+}
+
+.contact {
+  background-color: rgb(170, 118, 218);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 5%;
+  width: 40%;
+  height: 40px;
+  font-family: inherit;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+form input {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  font-family: inherit;
+  pointer-events: all;
+}
+
+form textarea {
+  width: 200px;
+  height: 30px;
+  max-width: 100%;
+  max-height: 200px;
+  font-family: inherit;
+  pointer-events: all;
+}
+
+@media (max-width: 425px) {
+  .education,
+  .hobby,
+  .social,
+  .contact {
+    padding: 10px 10px;
+    margin: 2% 10%;
+  }
+}

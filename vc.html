@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vc.css" />
+    <link rel="shortcut icon" href="./icon.png" type="image/png" />
+    <title>My VC</title>
+  </head>
+  <body>
+    <header>
+      <div class="ava">
+        <img
+          class="avatar"
+          src="./avatar.jpeg"
+          alt="Тут должна быть моя аватарка"
+        />
+        <div class="q">ку-ку</div>
+      </div>
+      <div class="headerText">
+        <h1>Вадим Рябев</h1>
+        <p>Учусь писать код...</p>
+      </div>
+      <div class="btns">
+        <button class="animBtn">Включить анимацию</button>
+        <button class="darkThemeBtn" id="darkBtn">Тёмная тема</button>
+      </div>
+    </header>
+    <main>
+      <div class="education">
+        <h2 id="ed"><i class="leftArrow"></i>Образование<i class="rightArrow"></i></h2>
+        <div class="educationList" id="edLi">
+          <ul>
+            <li>
+              Бакалавриат + магистратура в ННГУ им. Н. И. Лобачевского по направлению "Государственное и муниципальное управление"
+            </li>
+            <li>
+              Аспирантура в ННГУ им. Н. И. Лобачевского по направлению "Экономика"
+            </li>
+            <li>
+              Дополнительное образование в университете "Синергия" по направлению JavaScrypt-разработчик
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hobby">
+        <h2><i class="leftArrow"></i>Хобби<i class="rightArrow"></i></h2>
+        <ul>
+          <li>Чтение</li>
+          <li>Спорт</li>
+          <li>Автомобили</li>
+          <li>Радиолюбительство</li>
+          <li>Ремонт бытовой техники</li>
+          <li>Сериалы</li>
+          <li>код код код</li>
+        </ul>
+      </div>
+      <div class="social">
+        <h2><i class="leftArrow"></i>Социальные сети<i class="rightArrow"></i></h2>
+        <ul>
+          <li><a target="_blank" href="https://vk.com/vadya_220">VK</a></li>
+          <li>
+            <a target="_blank" href="https://github.com/Vadimbl4">GitHub</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h2><i class="leftArrow"></i>Связаться<i class="rightArrow"></i></h2>
+        <form action="/">
+          <p>Ваше имя:</p>
+          <input type="text" placeholder="Your name..." />
+          <p>Ваш email:</p>
+          <input type="email" placeholder="Your email...." />
+          <p>Ваше сообщение:</p>
+          <textarea placeholder="Your massage..."></textarea>
+          <button class="btn" type="submit">Связаться!</button>
+        </form>
+      </div>
+    </main>
+    <script src="vc.js"></script>
+  </body>
+</html>
